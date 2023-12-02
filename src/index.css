@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.notifications-section-container {
+  margin: 0 auto;
+  max-width: 620px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-container h1 {
+  margin-right: 8px;
+}
+
+.notifications-badge {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  align-self: center;
+  padding: 2px 12px;
+  border-radius: 8px;
+  margin: auto 8px;
+}
+
+.read-notifications-btn {
+  color: hsl(219, 12%, 42%);
+  border: none;
+  background-color: transparent;
+  flex-grow: 2;
+  text-align: right;
+  cursor: pointer;
+}
+
+.read-notifications-btn:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification-container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  padding: 8px;
+}
+
+.active {
+  background-color: hsl(210, 60%, 98%);
+  cursor: pointer;
+}
+
+.unread {
+  background-color: hsl(210, 60%, 98%);
+  cursor: pointer;
+}
+
+.notification-image {
+  width: 40px;
+  margin: 8px;
+  align-self: flex-start;
+}
+
+.notification-content {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: hsl(219, 12%, 42%);
+  padding-left: 8px;
+  margin: 8px 0;
+}
+
+.active .notification-main-content::after {
+  content: "•";
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 4px;
+  color: hsl(1, 90%, 64%);
+}
+
+.user-name-notification {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.user-name-notification:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.timelapse-notification {
+  color: hsl(219, 14%, 63%);
+  margin-top: 2px;
+}
+
+.post-reaction {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.post-reaction:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.links {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.message-box {
+  margin: 8px 0;
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(210, 60%, 98%);
+  border-radius: 8px;
+  padding: 4px 20px 4px 16px;
+  cursor: pointer;
+}
+
+.message-box:hover {
+  background-color: hsl(205, 33%, 90%);
+}
+
+.shared-image {
+  width: 40px;
+  align-self: flex-start;
+  margin: 8px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: hsl(210, 60%, 98%);
+    margin: 0 auto;
+  }
+
+  .notifications-section-container {
+    background-color: hsl(0, 0%, 100%);
+    margin: 40px auto;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
